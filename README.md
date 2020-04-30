@@ -5,19 +5,19 @@
 Build a docker image
 
 ```
-docker build . -t karakaram/claat
+docker-compose build
 ```
 
-Export contents
+Export Codelabs
 
 ```
-docker run --rm -v `pwd`:/root/work -w /root/work karakaram/claat export codelabs/*.md
+docker-compose run --rm app claat export codelabs/*.md
 ```
 
 Start a web server
 
 ```
-docker run --rm -v `pwd`:/root/work -w /root/work -p 9090:9090 karakaram/claat serve -addr 0.0.0.0:9090
+docker-compose up
 ```
 
-Visit http://localhost:9090/how-to-write-a-codelab/ on your web browser.
+Visit http://localhost:8000 on your web browser.
