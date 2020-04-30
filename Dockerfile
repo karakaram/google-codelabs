@@ -18,4 +18,4 @@ ENV PATH ./node_modules/.bin/:$PATH
 
 EXPOSE 8000
 
-CMD ["gulp", "serve"]
+CMD ["gulp", "serve", "--codelabs-dir=build_codelabs"]

@@ -11,7 +11,7 @@ docker-compose build
 Export Codelabs
 
 ```
-docker-compose run --rm app claat export codelabs/*.md
+docker-compose run --rm app claat export -o build_codelabs codelabs/*.md
 ```
 
 Start a web server
